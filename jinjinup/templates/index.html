@@ -1,0 +1,95 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>야자 출석 체크</title>
+</head>
+<body>
+    <h1>야자 출석 체크</h1>
+    <form action="/submit" method="post">
+        <label>학번: <input type="text" name="student_id" required></label><br><br>
+        <button type="submit">출석하기</button>
+    </form>
+</body>
+</html>
+<!-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>야자 출석 체크</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ace0eb, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 24px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ace0eb;
+            outline: none;
+        }
+
+        button {
+            background-color: #ace0eb;
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ace0eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>야자 출석 체크</h1>
+        <form action="/submit" method="post">
+            <label for="student_id">학번</label>
+            <input type="text" id="student_id" name="student_id" required>
+            <br><br>
+            <button type="submit">출석하기</button>
+        </form>
+    </div>
+</body>
+</html>
